@@ -4,3 +4,8 @@ p{
     font-size: 100px;
     font-style: italic;
 }
+div{
+    width: 100px;
+    height: 100px;
+    background: green;
+}
