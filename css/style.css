@@ -1,11 +1,15 @@
 p{
     color:white; 
     background: red; 
-    font-size: 100px;
+    font-size: 20px;
     font-style: italic;
 }
-#box{
+.box{
     width: 100px;
     height: 100px;
     background: green;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid red;
+
 }
