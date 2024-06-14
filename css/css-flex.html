@@ -3,22 +3,15 @@
     .d2{background-color: lightsalmon;}
     .d3{background-color: paleturquoise;}
     .d4{background-color: lightpink;}
-    .d5{background-color: palegreen; grid-area: header;}
+    .d5{background-color: palegreen;}
 
     .container{
         font-size: 40px;
         width: 100%;
         background: lightgray;
 
-        display: grid;
-        grid-template-columns: 100px 100px 100px;
-        grid-template-rows: 50px 50px 50px;
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-        grid-template-areas: 
-        "header header header"
-        "content content content"
-        "footer footer footer";
+        display: flex;
+        flex-direction: column;
     }
 </style>
 <div class="container">
