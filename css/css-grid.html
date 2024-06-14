@@ -3,7 +3,7 @@
     .d2{background-color: lightsalmon;}
     .d3{background-color: paleturquoise;}
     .d4{background-color: lightpink;}
-    .d5{background-color: palegreen;}
+    .d5{background-color: palegreen; grid-area: header;}
 
     .container{
         font-size: 40px;
@@ -15,6 +15,10 @@
         grid-template-rows: 50px 50px 50px;
         grid-column-gap: 20px;
         grid-row-gap: 20px;
+        grid-template-areas: 
+        "header header header"
+        "content content content"
+        "footer footer footer";
     }
 </style>
 <div class="container">
