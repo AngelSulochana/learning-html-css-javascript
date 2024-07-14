@@ -1,5 +1,5 @@
-const actualShippingCost = 5;
-const discountedShippingCost = 3;
+const actualShippingCost = 6;
+const discountedShippingCost = 2;
 let totalprice;
 
 function calculateShippingCost(totalpriceparam) {
