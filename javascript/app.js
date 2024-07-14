@@ -18,6 +18,7 @@ function calculateShippingCost(totalpriceparam) {
     totalprice = 19;
 
     console.log(`Your shipping cost is ${Shippingcost}`)
+    console.log(`For a cart value of ${totalpriceparam}`)
 }
 
 calculateShippingCost()
