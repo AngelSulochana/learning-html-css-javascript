@@ -1,12 +1,14 @@
+const actualShippingCost = 5;
+const discountedShippingCost = 3;
 let totalprice;
 
 function calculateShippingCost(totalpriceparam) {
     let Shippingcost;
 
     if (totalpriceparam <= 10){
-        Shippingcost = 5
+        Shippingcost = actualShippingCost
     } else if (totalpriceparam <= 20){
-        Shippingcost = 3
+        Shippingcost = discountedShippingCost
     } else {
         Shippingcost = 0
     }
