@@ -26,10 +26,12 @@
             return window.location.hostname;
         }
 
-        // Function to show the tooltip with the variable
+        // Function to show the tooltip with the variable 5 times
         function showTooltip(event) {
             const tooltip = document.getElementById('tooltip');
-            tooltip.textContent = getHostname();
+            const hostname = getHostname();
+            const repeatedHostname = Array(5).fill(hostname).join(' ');
+            tooltip.textContent = repeatedHostname;
             tooltip.style.display = 'block';
             tooltip.style.left = event.pageX + 'px';
             tooltip.style.top = event.pageY + 'px';
