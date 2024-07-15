@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover to Show Variable</title>
+    <style>
+        .tooltip {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <p>Hover over the word <span id="hover-word" style="color: blue; text-decoration: underline; cursor: pointer;">here</span> to see the variable.</p>
+    <div id="tooltip" class="tooltip"></div>
+
+    <script>
+        // Function to get the local machine's hostname
+        function getHostname() {
+            return window.location.hostname;
+        }
+
+        // Function to show the tooltip with the variable 5 times
+        function showTooltip(event) {
+            const tooltip = document.getElementById('tooltip');
+            const hostname = getHostname();
+            const repeatedHostname = Array(5).fill(hostname).join(' ');
+            tooltip.textContent = repeatedHostname;
+            tooltip.style.display = 'block';
+            tooltip.style.left = event.pageX + 'px';
+            tooltip.style.top = event.pageY + 'px';
+        }
+
+        // Function to hide the tooltip
+        function hideTooltip() {
+            const tooltip = document.getElementById('tooltip');
+            tooltip.style.display = 'none';
+        }
+
+        // Add event listeners to the hover word
+        const hoverWord = document.getElementById('hover-word');
+        hoverWord.addEventListener('mouseover', showTooltip);
+        hoverWord.addEventListener('mouseout', hideTooltip);
+    </script>
+</body>
+</html>
