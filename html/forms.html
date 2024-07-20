@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="colors.html">
+        <div>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" placeholder="please enter your first name">
+        </div>
+        <br>
+        <div>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" placeholder="please enter your Last Name">
+        </div>
+        <br>
+        <div>
+            <input type="reset">
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+        <br>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" maxlength="12" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Please enter email address in format fn.ln@angel.com" required>
+        </div>
+        <br>
+        <div>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 6767676777" maxlength="13" required>
+        </div>
+        <br>
+        <div>
+            <label for="Bday">Date of Birth</label>
+            <input type="date" name="Bday" id="Bday">
+        </div>
+        <br>
+        <div>
+            <label for="title">Title</label>
+            <label for="Mr.">Mr.</label>
+            <input type="radio" id="Mr." name="title" value="Mr.">
+
+            <label for="title">Title</label>
+            <label for="Mrs.">Mrs.</label>
+            <input type="radio" id="Mrs." name="title" value="Mrs.">
+
+            <label for="title">Title</label>
+            <label for="Ms.">Ms.</label>
+            <input type="radio" id="Ms." name="title" value="Ms.">
+        </div>
+        <br>
+
+        <div>
+            <label for="quantity">Years of exp</label>
+            <input type="number" name="quantity" id="quantity" min="0" max="40">
+        </div>
+        <br>
+        <div>
+            <label for="emptype">Employee type</label>
+            <select name="type" id="type">
+                <option value="Permanent">Permanent</option>
+                <option value="Contractor">Contractor</option>
+                <option value="Fixedterm">Fixed term</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="newsletters">Do you want to suscribe to our newsletters</label>
+            <input type="checkbox" name="newsletters" id="newsletters">
+        </div>
+    </form>
+</body>
+</html>
