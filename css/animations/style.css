@@ -4,6 +4,8 @@
     background: red;
     font-size: 25px;
     text-align: center;
+
+    animation: myslide 15s ease-in 1s infinite right;
 }
 #box1:hover{
     animation: myslide 15s ease-in 1s infinite right;
