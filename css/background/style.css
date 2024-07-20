@@ -1,0 +1,17 @@
+body{
+
+}
+
+h1{
+    background: linear-gradient(to left blue,white);
+    background-repeat: no-repeat; /*does not repeat background, but leaves a space once the element ends*/
+    background-attachment: fixed; /*applies background to the entire page  */
+
+}
+p{
+    background: linear-gradient(to right blue,white);
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+
+}
+
