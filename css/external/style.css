@@ -1,9 +1,12 @@
 body{
     background-color: black;
 }
-h3{
-    color: aliceblue;
+#head{
+    color: brown;
 }
-p{
-    color: aliceblue;
+.odd{
+    color: red;
+}
+.even{
+    color: orange;
 }
