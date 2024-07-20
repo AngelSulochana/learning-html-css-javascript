@@ -1,0 +1,17 @@
+p::first-letter{
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+}
+p::first-line{
+    color: aquamarine;
+}
+p::selection{
+    color: grey;
+}
+#list1 li::before{
+    content: "😇";
+}
+li::marker{
+    color: ;
+}
