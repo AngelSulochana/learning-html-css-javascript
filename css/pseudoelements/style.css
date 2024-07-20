@@ -13,5 +13,5 @@ p::selection{
     content: "😇";
 }
 li::marker{
-    color: ;
+    color: red;
 }
